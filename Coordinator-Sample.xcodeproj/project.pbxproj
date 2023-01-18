@@ -17,7 +17,11 @@
 		9C8FB2D72965EB35001B7093 /* Coordinator_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2D62965EB35001B7093 /* Coordinator_SampleUITestsLaunchTests.swift */; };
 		9C8FB2E52967C6DC001B7093 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2E42967C6DC001B7093 /* Coordinator.swift */; };
 		9C8FB2E72967C74C001B7093 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2E62967C74C001B7093 /* AppCoordinator.swift */; };
-		9C8FB2E92967C9BC001B7093 /* HomeViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2E82967C9BC001B7093 /* HomeViewControllerCoordinator.swift */; };
+		9C8FB2E92967C9BC001B7093 /* MainViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2E82967C9BC001B7093 /* MainViewControllerCoordinator.swift */; };
+		9CD62E992978900F00BC1046 /* BankStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD62E972978900F00BC1046 /* BankStatementViewController.swift */; };
+		9CD62E9A2978900F00BC1046 /* BankStatementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD62E982978900F00BC1046 /* BankStatementViewController.xib */; };
+		9CD62E9E2978903600BC1046 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD62E9C2978903600BC1046 /* MainViewController.swift */; };
+		9CD62E9F2978903600BC1046 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD62E9D2978903600BC1046 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,11 @@
 		9C8FB2D62965EB35001B7093 /* Coordinator_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C8FB2E42967C6DC001B7093 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9C8FB2E62967C74C001B7093 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		9C8FB2E82967C9BC001B7093 /* HomeViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		9C8FB2E82967C9BC001B7093 /* MainViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		9CD62E972978900F00BC1046 /* BankStatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankStatementViewController.swift; sourceTree = "<group>"; };
+		9CD62E982978900F00BC1046 /* BankStatementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankStatementViewController.xib; sourceTree = "<group>"; };
+		9CD62E9C2978903600BC1046 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9CD62E9D2978903600BC1046 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 		9C5C88FE29771F4E00D98718 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9CD62E9B2978902100BC1046 /* Main */,
+				9CD62E9629788F5F00BC1046 /* Bank Statement */,
 				9C5C88FF29771F5900D98718 /* Home */,
 			);
 			path = Views;
@@ -168,9 +178,27 @@
 			children = (
 				9C8FB2E42967C6DC001B7093 /* Coordinator.swift */,
 				9C8FB2E62967C74C001B7093 /* AppCoordinator.swift */,
-				9C8FB2E82967C9BC001B7093 /* HomeViewControllerCoordinator.swift */,
+				9C8FB2E82967C9BC001B7093 /* MainViewControllerCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		9CD62E9629788F5F00BC1046 /* Bank Statement */ = {
+			isa = PBXGroup;
+			children = (
+				9CD62E972978900F00BC1046 /* BankStatementViewController.swift */,
+				9CD62E982978900F00BC1046 /* BankStatementViewController.xib */,
+			);
+			path = "Bank Statement";
+			sourceTree = "<group>";
+		};
+		9CD62E9B2978902100BC1046 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CD62E9C2978903600BC1046 /* MainViewController.swift */,
+				9CD62E9D2978903600BC1046 /* MainViewController.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD62E9A2978900F00BC1046 /* BankStatementViewController.xib in Resources */,
 				9C8FB2C02965EB35001B7093 /* LaunchScreen.storyboard in Resources */,
+				9CD62E9F2978903600BC1046 /* MainViewController.xib in Resources */,
 				9C8FB2BD2965EB35001B7093 /* Assets.xcassets in Resources */,
 				9C5C890129771F8800D98718 /* HomeViewController.xib in Resources */,
 			);
@@ -304,10 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C8FB2E92967C9BC001B7093 /* HomeViewControllerCoordinator.swift in Sources */,
+				9CD62E9E2978903600BC1046 /* MainViewController.swift in Sources */,
+				9C8FB2E92967C9BC001B7093 /* MainViewControllerCoordinator.swift in Sources */,
 				9C8FB2E72967C74C001B7093 /* AppCoordinator.swift in Sources */,
 				9C8FB2B82965EB32001B7093 /* HomeViewController.swift in Sources */,
 				9C8FB2B42965EB32001B7093 /* AppDelegate.swift in Sources */,
+				9CD62E992978900F00BC1046 /* BankStatementViewController.swift in Sources */,
 				9C8FB2E52967C6DC001B7093 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -485,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,7 +544,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

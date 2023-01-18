@@ -11,12 +11,12 @@ class AppCoordinator: Coordinator {
     let window: UIWindow
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    let homeViewControllerCoordinator: HomeViewControllerCoordinator
+    let homeViewControllerCoordinator: MainViewControllerCoordinator
     
     init(window: UIWindow) {
         self.window = window
         self.navigationController = UINavigationController()
-        homeViewControllerCoordinator = HomeViewControllerCoordinator(navigationController: navigationController)
+        homeViewControllerCoordinator = MainViewControllerCoordinator(navigationController: navigationController)
     }
     
     func start() {
