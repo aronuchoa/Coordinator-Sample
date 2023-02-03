@@ -10,6 +10,7 @@ import UIKit
 protocol MainViewControllerDelegate: AnyObject {
     func selectTabItem(selectedIndex: Int)
     func openBankStatementDetail()
+    func openCreditCards()
 }
 
 class MainViewController: UITabBarController {
@@ -35,6 +36,7 @@ class MainViewController: UITabBarController {
         homeController.tabBarItem = UITabBarItem(title: "Home", image: homeImage, tag: 0)
         homeController.tabBarItem = UITabBarItem(title: "Home", image: homeImage, selectedImage: homeImage)
         homeController.navigationItem.title = "Home"
+        homeController.delegate = self
         
         let bankStatementImage = UIImage(systemName: "doc")
         let bankStatementController = BankStatementViewController()
@@ -45,6 +47,8 @@ class MainViewController: UITabBarController {
         self.viewControllers = [homeController, bankStatementController]
     }
 }
+
+// MARK: - Delegates
 
 extension MainViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
@@ -58,5 +62,11 @@ extension MainViewController: UITabBarControllerDelegate {
 extension MainViewController: BankStatementViewControllerDelegate {
     func clickBankStatementDetail() {
         mainViewControllerDelegate?.openBankStatementDetail()
+    }
+}
+
+extension MainViewController: HomeViewControllerDelegate {
+    func clickCreditCards() {
+        mainViewControllerDelegate?.openCreditCards()
     }
 }

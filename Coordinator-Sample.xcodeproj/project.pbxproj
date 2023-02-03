@@ -11,6 +11,9 @@
 		9C61B346298A171B00571752 /* BankStatementDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61B345298A171B00571752 /* BankStatementDetailCoordinator.swift */; };
 		9C61B34A298C6A3D00571752 /* BankStatementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61B348298C6A3D00571752 /* BankStatementDetailViewController.swift */; };
 		9C61B34B298C6A3D00571752 /* BankStatementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C61B349298C6A3D00571752 /* BankStatementDetailViewController.xib */; };
+		9C61B34F298D8D8300571752 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61B34D298D8D8300571752 /* CreditCardViewController.swift */; };
+		9C61B350298D8D8300571752 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C61B34E298D8D8300571752 /* CreditCardViewController.xib */; };
+		9C61B352298D8DA300571752 /* CreditCardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61B351298D8DA300571752 /* CreditCardCoordinator.swift */; };
 		9C8FB2B42965EB32001B7093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2B32965EB32001B7093 /* AppDelegate.swift */; };
 		9C8FB2B82965EB32001B7093 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8FB2B72965EB32001B7093 /* HomeViewController.swift */; };
 		9C8FB2BD2965EB35001B7093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8FB2BC2965EB35001B7093 /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		9C61B345298A171B00571752 /* BankStatementDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankStatementDetailCoordinator.swift; sourceTree = "<group>"; };
 		9C61B348298C6A3D00571752 /* BankStatementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankStatementDetailViewController.swift; sourceTree = "<group>"; };
 		9C61B349298C6A3D00571752 /* BankStatementDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankStatementDetailViewController.xib; sourceTree = "<group>"; };
+		9C61B34D298D8D8300571752 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		9C61B34E298D8D8300571752 /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		9C61B351298D8DA300571752 /* CreditCardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCoordinator.swift; sourceTree = "<group>"; };
 		9C8FB2B02965EB32001B7093 /* Coordinator-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coordinator-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8FB2B32965EB32001B7093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8FB2B72965EB32001B7093 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		9C5C88FE29771F4E00D98718 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9C61B34C298D8D5E00571752 /* CreditCard */,
 				9CD62E9629788F5F00BC1046 /* Bank Statement */,
 				9C61B347298C6A1000571752 /* Bank Statement Detail */,
 				9C5C88FF29771F5900D98718 /* Home */,
@@ -138,6 +145,15 @@
 				9C61B349298C6A3D00571752 /* BankStatementDetailViewController.xib */,
 			);
 			path = "Bank Statement Detail";
+			sourceTree = "<group>";
+		};
+		9C61B34C298D8D5E00571752 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				9C61B34D298D8D8300571752 /* CreditCardViewController.swift */,
+				9C61B34E298D8D8300571752 /* CreditCardViewController.xib */,
+			);
+			path = CreditCard;
 			sourceTree = "<group>";
 		};
 		9C8FB2A72965EB31001B7093 = {
@@ -196,6 +212,7 @@
 				9C8FB2E62967C74C001B7093 /* AppCoordinator.swift */,
 				9C8FB2E82967C9BC001B7093 /* MainCoordinator.swift */,
 				9C61B345298A171B00571752 /* BankStatementDetailCoordinator.swift */,
+				9C61B351298D8DA300571752 /* CreditCardCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -324,6 +341,7 @@
 			files = (
 				9CD62E9A2978900F00BC1046 /* BankStatementViewController.xib in Resources */,
 				9C8FB2C02965EB35001B7093 /* LaunchScreen.storyboard in Resources */,
+				9C61B350298D8D8300571752 /* CreditCardViewController.xib in Resources */,
 				9CD62E9F2978903600BC1046 /* MainViewController.xib in Resources */,
 				9C61B34B298C6A3D00571752 /* BankStatementDetailViewController.xib in Resources */,
 				9C8FB2BD2965EB35001B7093 /* Assets.xcassets in Resources */,
@@ -357,10 +375,12 @@
 				9C8FB2E72967C74C001B7093 /* AppCoordinator.swift in Sources */,
 				9C61B346298A171B00571752 /* BankStatementDetailCoordinator.swift in Sources */,
 				9C8FB2B82965EB32001B7093 /* HomeViewController.swift in Sources */,
+				9C61B352298D8DA300571752 /* CreditCardCoordinator.swift in Sources */,
 				9C61B34A298C6A3D00571752 /* BankStatementDetailViewController.swift in Sources */,
 				9C8FB2B42965EB32001B7093 /* AppDelegate.swift in Sources */,
 				9CD62E992978900F00BC1046 /* BankStatementViewController.swift in Sources */,
 				9C8FB2E52967C6DC001B7093 /* Coordinator.swift in Sources */,
+				9C61B34F298D8D8300571752 /* CreditCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

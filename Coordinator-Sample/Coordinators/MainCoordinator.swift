@@ -12,10 +12,12 @@ class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
     private var mainViewController: MainViewController?
     let bankStatementDetailCoordinator: BankStatementDetailCoordinator
+    let creditCardCoordinator: CreditCardCoordinator
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         bankStatementDetailCoordinator = BankStatementDetailCoordinator(navigationController: navigationController)
+        creditCardCoordinator = CreditCardCoordinator(navigationController: navigationController)
     }
     
     func start() {
@@ -29,6 +31,10 @@ class MainCoordinator: Coordinator {
 }
 
 extension MainCoordinator: MainViewControllerDelegate {
+    func openCreditCards() {
+        creditCardCoordinator.start()
+    }
+    
     func openBankStatementDetail() {
         bankStatementDetailCoordinator.start()
     }
