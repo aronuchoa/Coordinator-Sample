@@ -11,17 +11,17 @@ class AppCoordinator: Coordinator {
     let window: UIWindow
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    let homeViewControllerCoordinator: MainViewControllerCoordinator
+    let mainCoordinator: MainCoordinator
     
     init(window: UIWindow) {
         self.window = window
         self.navigationController = UINavigationController()
-        homeViewControllerCoordinator = MainViewControllerCoordinator(navigationController: navigationController)
+        mainCoordinator = MainCoordinator(navigationController: navigationController)
     }
     
     func start() {
         window.rootViewController = self.navigationController
-        homeViewControllerCoordinator.start()
+        mainCoordinator.start()
         window.makeKeyAndVisible()
     }
     
