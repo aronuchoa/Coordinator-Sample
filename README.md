@@ -5,11 +5,11 @@
 
 # Coordinator-Sample
 
-O que é o Coordinator?
+## O que é o Coordinator?
 
 Coordinator é um padrão de desenvolvimento, aonde encapsula a lógica de navegação de telas. A lógica de navegação passa de View Controller para o Coordinator, e assim nós ganhamos grande controle no fluxo de navegação.
 
-Sobre o Coordinator-Sample
+## Sobre o Coordinator-Sample
 
 Coordinator-Sample é um exemplo de implementação utilzando Coordinator, onde todo o fluxo de navegação de tela passa a ser responsabilidade dos Coordinators.
 Esse exemplo foi desenvolvido utilizando o componente TABBARController e o padrão ViewCode, onde todas as telas foram desenvolvidas programaticamente e dispensa totalmente o uso de Storyboard. Nesse exemplo também criamos .Xibs para cada controller.
